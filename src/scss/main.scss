@@ -1,0 +1,31 @@
+@use "normalize";
+@use "reset";
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #6190E8;
+  background: linear-gradient(to right, #A7BFE8, #6190E8);
+  font-family: 'Montserrat', sans-serif;
+}
+
+button, input, textarea {
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 1s;
+
+  &:hover {
+    background-color: #fff;
+    transition: background-color 0.4s;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
